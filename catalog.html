@@ -28,7 +28,27 @@
       <!-- Здесь будет блок «Стоимость» -->
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input id="filter-adaptive" type="radio" name="grid" value="adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input id="filter-fixed" type="radio" name="grid" value="fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input id="filter-rubber" type="radio" name="grid" value="rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <!-- Здесь будет блок «Сортировать» -->
